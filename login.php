@@ -10,7 +10,7 @@
         $con=mysqli_connect("localhost","root","","grievance");
         $user=$_POST['username'];
         $pass1=$_POST['password'];
-        $pass=md5($pass1);
+        $pass=sha1($pass1);
 		
         $_SESSION["usrname"] = $user;
 

@@ -6,7 +6,7 @@
     {
         $user=$_POST['uname'];
         $pass1=$_POST['pwd'];
-		$pass=md5($pass1);
+		$pass=sha1($pass1);
         $n=$_POST['name'];
         $sql="INSERT into staff_info VALUES('$n','$user','$pass')";
         mysqli_query($con,$sql);

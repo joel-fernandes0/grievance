@@ -136,18 +136,18 @@ function showHint(str) {
             <label>Name</label>
             <BR>
 
-            <input type="text" class="txt" name="name" placeholder="Please enter your user-id"  onkeyup="showHint(this.value)" />
+            <input type="text" class="txt" name="name" placeholder="Name"  onkeyup="showHint(this.value)" />
             <br>
 	    <p class="txt">Suggestions: <span id="txtHint"></span></p>
 
-            <label>Usr-Id</label>
+            <label>User-ID</label>
             <BR>
 
-            <input type="password" class="txt" name="uname" placeholder="Please enter your user-id" />
+            <input type="password" class="txt" name="uname" placeholder="User-ID" />
             <br>
 
             <label>PASSWORD</label>
-            <input type="password" class="txt" name="pwd" placeholder="Please enter your password" />
+            <input type="password" class="txt" name="pwd" placeholder="Password" />
             <br>
 
 

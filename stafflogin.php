@@ -22,15 +22,4 @@ if(isset($_POST['uname']))
 		echo "Invalid Username/Password<BR>";
 	}
 }
-if($succes==0)
-{
-?>
 
-<form action="sacclogin.php" method=POST>
-	USERNAME:<input type="text" name="uname" value="<?php echo $n;?>"><br>
-	PASSWORD:<input type="PASSWORD" name="pwd"><br>
-	<input type="submit">	
-</form>
-<?php
-}
-?>

@@ -8,8 +8,14 @@
     body {
         font-family: sans-serif;
         background: linear-gradient(to right, #b92b27, #1565c0);
+        background-color: #191919;
+        padding: 100px 8px 250px 38px;
+        width: 50%;
+        height: 55%;
+        margin-top: 5%;
+        margin-left: 25%
     }
-    .container {
+    /* .container {
         background-color: #191919;
         box-shadow: 1px 1px 2px 1px grey;
         padding: 100px 8px 250px 38px;
@@ -17,7 +23,7 @@
         height: 55%;
         margin-top: 5%;
         margin-left: 25%;
-    }
+    } */
     
 
     .txt {

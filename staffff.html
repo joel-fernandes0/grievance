@@ -1,44 +1,22 @@
-
-<?php
-	
-	$con=mysqli_connect("localhost","root","","grievance");
-    if(isset($_POST['uname']))
-    {
-        $user=$_POST['uname'];
-        $pass1=$_POST['pwd'];
-		$pass=sha1($pass1);
-        $n=$_POST['name'];
-        $sql="INSERT into staff_info VALUES('$n','$user','$pass')";
-        mysqli_query($con,$sql);
-        echo "Insertion succesful";
-    }
-?>
-<style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
         body {
             font-family: sans-serif;
             background: linear-gradient(to right, #b92b27, #1565c0);
-            margin-top: 10%;
             background-color: #191919;
             /* box-shadow: 1px 1px 2px 1px grey; */
-            padding: 50px 8px 70px 38px;
-            width: 30%;
-            height: 50%;
-            margin-left: 33%;
-        }
-
-/* 
-        .container {
-            background-color: #191919;
-            box-shadow: 1px 1px 2px 1px grey;
-            padding: 50px 8px 70px 38px;
+            padding: 50px 38px 70px 38px;
             width: 30%;
             height: 50%;
             margin-left: 33%;
             border-radius: 20px;
             transition: 0.25s
-        } */
-/* 
-        .container input [type="text"] {
+        }
+
+
+       .container input [type="text"] {
             border: 0;
             background: none;
             display: block;
@@ -51,7 +29,7 @@
             color: white;
             border-radius: 24px;
             transition: 0.25s
-        } */
+        }
 
 
 
@@ -69,7 +47,7 @@
             margin-top: 3px;
             color: white;
             text-transform: uppercase;
-            font-weight: 700;
+            font-weight: 500;
             font-family: 'Merriweather', serif;
             font-family: 'Ubuntu', sans-serif;
         }
@@ -116,22 +94,25 @@
             margin-top: 5px;
         }
     </style>
-<div class="container">
+</head>
+<body>
 
-        <form action="insstaff.php" method="POST">
-            
-            
-            <center><h2>Welcome to Staff Grievance portal</h2></center>
+    <div class="container">
+        <form action="insstud.php" method="POST">
+
+
+            <center><h2>Insertion Successful</h2></center>
+            <center><h2>Welcome to Students Grivence portal</h2></center>
             <label>Name</label>
             <BR>
 
-            <input type="text" class="txt" name="name" placeholder="Please enter your user-id" />
+            <input type="text" class="txt" name="name" placeholder="Please enter your name" />
             <br>
 
             <label>Usr-Id</label>
             <BR>
 
-            <input type="password" class="txt" name="uname" placeholder="Please enter your password" />
+            <input type="password" class="txt" name="uname" placeholder="Please enter your user-id" />
             <br>
 
             <label>PASSWORD</label>
@@ -142,3 +123,6 @@
             <button type="submit" name="submit" class="button">SUBMIT-QUERY</button>
         </form>
     </div>
+    
+</body>
+</html>

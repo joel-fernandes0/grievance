@@ -6,19 +6,22 @@
         <style>
         @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Ubuntu&display=swap');
 
+       
+
             body {
                 font-family: sans-serif;
                 background: linear-gradient(to right, #b92b27, #1565c0);
-            }
-            
-
-            .container{
                 background-color: #191919;
-                box-shadow: 1px 1px 2px 1px grey;
+              
                 padding: 50px 8px 70px 38px;
                 width: 30%;
                 height: 50%;
                 margin-left:33%; 
+            }
+            
+
+            /* .container{
+               
                 border-radius: 20px;
                 transition: 0.25s
             }
@@ -36,7 +39,7 @@
                 color: white;
                 border-radius: 24px;
                 transition: 0.25s
-            }
+            } */
             
 
             
@@ -54,7 +57,7 @@
                 margin-top: 3px;
                 color: white;
                 text-transform: uppercase;
-                font-weight: 500;
+                font-weight: 700;
                 font-family: 'Merriweather', serif;
                 font-family: 'Ubuntu', sans-serif;
             }
@@ -103,8 +106,9 @@
 
         </style>
     
-    <body style="margin-top: 13%;">
+    <body style="margin-top: 5%;">
 
+    <h1 style="margin-bottom: 15%;"> Welcome to Online Grievance  System</h1>
         
         <div class="container">
             <center><h1>Please share</h1></center>

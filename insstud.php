@@ -18,13 +18,9 @@
             font-family: sans-serif;
             background: linear-gradient(to right, #b92b27, #1565c0);
             margin-top: 10%;
-        }
-
-
-        .container {
             background-color: #191919;
-            box-shadow: 1px 1px 2px 1px grey;
-            padding: 50px 8px 70px 38px;
+            /* box-shadow: 1px 1px 2px 1px grey; */
+            padding: 50px 38px 70px 38px;
             width: 30%;
             height: 50%;
             margin-left: 33%;
@@ -32,7 +28,8 @@
             transition: 0.25s
         }
 
-        .container input [type="text"] {
+
+       /* .container input [type="text"] {
             border: 0;
             background: none;
             display: block;
@@ -45,7 +42,7 @@
             color: white;
             border-radius: 24px;
             transition: 0.25s
-        }
+        } */
 
 
 
@@ -63,7 +60,7 @@
             margin-top: 3px;
             color: white;
             text-transform: uppercase;
-            font-weight: 500;
+            font-weight: 700;
             font-family: 'Merriweather', serif;
             font-family: 'Ubuntu', sans-serif;
         }
@@ -110,13 +107,15 @@
             margin-top: 5px;
         }
     </style>
+</head>
+<body>
 
-<div class="container">
+    <div class="container">
         <form action="insstud.php" method="POST">
 
 
-            <center><h2>Insertion Successful</h2></center>
-            <center><h2>Welcome to Students Grivence portal</h2></center>
+            
+            <center><h2>Welcome to Students Grievance portal</h2></center>
             <label>Name</label>
             <BR>
 

@@ -1,44 +1,54 @@
-
 <html>
-    <meta charset="UTF-8">
-        <title>Welcome</title>
-        <style type="text/css">
-            table{
-                border-collapse: collapse;
-                width: 100%;
-                color: #8e44ad;
-                font-family: monospace;
-                font-size: 25px;
-                text-align: left;
-            }
-            
-            .container{
-                background-color: whitesmoke;
-                box-shadow: 1px 1px 2px 1px grey;
-                padding: 250px 800px 200px 300px;
-                width: 30%;
-                height: 50%;
-                margin-left: 06%; 
-                            }
-                            .txt{
-                                width: 90%;
-                                height: 5%;
-                                border: 1px solid brown;
-                                border-radius: 05px;
-                                padding: 20px 15px 20px 15px;
-                                margin: 10px 0px 15px 0px;
-                            }
-                            .button{
-                                width: 30%;
-                                height: 10%;
-                                margin-left :30%;
-                            }
-        </style>
-    
-    <body style="background-color: #bdc3c7">
-        <form action="" method="POST">
-           
-        <table border="3">	
+<meta charset="UTF-8">
+<title>Welcome</title>
+<style type="text/css">
+    body {
+        background: linear-gradient(to right, #b92b27, #1565c0);
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        color: white;
+        font-family: monospace;
+        font-size: 25px;
+        text-align: left;
+        border-color: white;
+    }
+
+    th, td{
+        text-align: center;
+    }
+
+    .container {
+        background-color: whitesmoke;
+        box-shadow: 1px 1px 2px 1px grey;
+        padding: 250px 800px 200px 300px;
+        width: 30%;
+        height: 50%;
+        margin-left: 06%;
+    }
+
+    .txt {
+        width: 90%;
+        height: 5%;
+        border: 1px solid brown;
+        border-radius: 05px;
+        padding: 20px 15px 20px 15px;
+        margin: 10px 0px 15px 0px;
+    }
+
+    .button {
+        width: 30%;
+        height: 10%;
+        margin-left: 30%;
+    }
+</style>
+
+<body style="background-color: #bdc3c7">
+    <form action="" method="POST">
+
+        <table border="3">
             <tr>
                 <th>COLLEGE</th>
                 <th>DEPARTMENT</th>
@@ -47,14 +57,12 @@
                 <th>DETAILED INFORMATION</th>
                 <th>ROOT CAUSE</th>
             </tr>
-        <?php
+            <?php
         session_start();
         $id=$_SESSION["usrname"];
 		
             
         $con=mysqli_connect("localhost","root","","grievance");
-        
-        
         
         $sql="select * from grievance_info";
         $result2=mysqli_query($con,$sql);
@@ -70,10 +78,8 @@
             echo "</table>";
         }
          ?>
-         </table>
-         </form>
-         </body>
-         
-</html>
+        </table>
+    </form>
+</body>
 
-   
+</html>

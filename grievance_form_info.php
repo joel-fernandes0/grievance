@@ -31,7 +31,7 @@
             //$sql="insert into grieviance_info(full_name,gender,college,department,semester,contact_no,category,grievance_type,date_of_grievance,detail,root_cause,date_post)values('$fname','$gend','$college','$dept','$sem','$cont_no','$cat','$type','$date','$detail','$root','2020-01-14');";
             $sql="INSERT into grievance_info values('$fname','$gend','$college','$dept','$sem','$cont_no','$cat','$type','$date','$detail','$root',now());";
             mysqli_query($con,$sql);
-			echo "Thank you for your valued input";
+			echo "Thank you for Submitting the Grievance Form";
             }
         }
        

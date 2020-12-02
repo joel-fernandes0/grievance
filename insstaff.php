@@ -148,7 +148,7 @@ function showHint(str) {
             <label>User-ID</label>
             <BR>
 
-            <input type="password" class="txt" name="uname" placeholder="User-ID" />
+            <input type="text" class="txt" name="uname" placeholder="User-ID" />
             <br>
 
             <label>PASSWORD</label>

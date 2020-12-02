@@ -13,6 +13,23 @@
         echo "Insertion succesful";
     }
 ?>
+<script>
+function showHint(str) {
+  if (str.length == 0) {
+    document.getElementById("txtHint").innerHTML = "";
+    return;
+  } else {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("txtHint").innerHTML = this.responseText;
+      }
+    };
+    xmlhttp.open("GET", "gethint.php?q=" + str, true);
+    xmlhttp.send();
+  }
+}
+</script>
     <style>
         body {
             font-family: sans-serif;
@@ -119,8 +136,9 @@
             <label>Name</label>
             <BR>
 
-            <input type="text" class="txt" name="name" placeholder="Please enter your name" />
+            <input type="text" class="txt" name="name" placeholder="Please enter your user-id"  onkeyup="showHint(this.value)" />
             <br>
+	    <p class="txt">Suggestions: <span id="txtHint"></span></p>
 
             <label>Usr-Id</label>
             <BR>
